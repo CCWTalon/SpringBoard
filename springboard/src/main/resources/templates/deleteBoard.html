@@ -1,0 +1,17 @@
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+	</head>
+	<body>
+		<form action="/deleteBoard" method="post">
+			<fieldset style="width:300px; margin: auto;">
+				<legend>Delete Board</legend>
+				No : <input type="text" name="boardNo" th:value="${board.boardNo}" readonly> <br>
+				Title : <a th:text="${board.boardTitle}"></a> <br>
+				User : <a th:text="${board.boardUser}"></a> <br>
+				Password : <input type="password" name="boardPw" id="Password"> <br>
+				<input type="submit" value="Delete">
+				<a th:href="@{/detailBoard(boardNo=${board.boardNo}, currentPage=${currentPage})}">돌아가기</a>
+			</fieldset>
+		</form>
+	</body>
+</html>

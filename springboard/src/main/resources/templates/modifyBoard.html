@@ -1,0 +1,18 @@
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+	</head>
+	<body>
+		<form action="/modifyBoard" method="post">
+			<fieldset style="width:300px; margin: auto;">
+				<legend>Modify Board</legend>
+					<input type="text" name="boardNo" th:value="${board.boardNo}" readonly> <br>
+					<input type="password" name="boardPw" id="Password"> <br>
+					<input type="text" name="boardTitle" th:value="${board.boardTitle}"> <br>
+					<input type="text" name="boardContent" th:value="${board.boardContent}"> <br>
+					<input type="text" name="boardUser" th:value="${board.boardUser}"> <br>
+					<input type="submit" value="Modify">
+				<a th:href="@{/detailBoard(boardNo=${board.boardNo}, currentPage=${currentPage})}">돌아가기</a>
+			</fieldset>
+		</form>
+	</body>
+</html>

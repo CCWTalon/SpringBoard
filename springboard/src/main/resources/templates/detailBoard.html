@@ -1,0 +1,17 @@
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+	</head>
+	<body>
+		<fieldset style="width:300px; margin: auto;">
+			<legend>Detail Board</legend>
+			No : <a th:text="${board.boardNo}"></a> <br>
+			Title : <a th:text="${board.boardTitle}"></a> <br>
+			Content : <a th:text="${board.boardContent}"></a> <br>
+			User : <a th:text="${board.boardUser}"></a> <br>
+			Date : <a th:text="${board.boardDate}"></a> <br>
+			<a th:href="@{/boardList(currentPage=${currentPage})}">목록으로</a>
+			<a th:href="@{/modifyBoard(boardNo=${board.boardNo}, currentPage=${currentPage})}">수정</a>
+			<a th:href="@{/deleteBoard(boardNo=${board.boardNo}, currentPage=${currentPage})}">삭제</a>
+		</fieldset>
+	</body>
+</html>
