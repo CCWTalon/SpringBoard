@@ -1,0 +1,89 @@
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Muzik Ent.</title>
+
+    <!-- Bootstrap core CSS -->
+    <link th:href="@{/resources/vendor/bootstrap/css/bootstrap.min.css}" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link th:href="@{https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i}" rel="stylesheet">
+    <link th:href="@{https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link th:href="@{/resources/css/business-casual.min.css}" rel="stylesheet">
+
+  </head>
+  <body>
+    <h1 class="site-heading text-center text-white d-none d-lg-block">
+      <span class="site-heading-upper text-primary mb-3">모든 음악의 중심</span>
+      <span class="site-heading-lower">Muzik</span>
+    </h1>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" th:href="@{/index}">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" th:href="@{/Stop}">About</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" th:href="@{/Stop}">Products</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" th:href="@{/Stop}">Store</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" th:href="@{/boardList}">Board</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="page-section clearfix">
+      <div class="container">
+        <div class="intro">
+          <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="img/seulgi.jpg" alt="">
+          <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+            <h2 class="section-heading mb-4">
+              <span class="section-heading-upper">이 달의 인터뷰</span> <br>
+              <span class="section-heading-lower">레드벨벳 슬기의 하고 싶은 말</span>
+            </h2>
+            <p class="mb-3">2018년 11월 30일, RBB (Really Bad Boy)로 돌아온 레드벨벳 그 중심에는 춤이면 춤, 노래면 노래 어떤 것이든 소화할 수 있는 그녀가 있었다. 소녀에서 진정한 여자로 돌아온 슬기와 속 깊은 이야기를 담은 이야기를 들어보자
+            </p>
+            <div class="intro-button mx-auto">
+              <a class="btn btn-primary btn-xl" href="#">자세히 보기</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <footer class="footer text-faded text-center py-5">
+      <div class="container">
+        <p class="m-0 small">서울특별시 강남구 삼성로 648 CW ENTERTAINMENT <br>
+        				 	  대표전화 : 02 1994 0112 <br>
+        					  대표 : 　사업자번호 112 94 24100 <br>
+        					 Copyright &copy; Muzik Ent. 2018</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>

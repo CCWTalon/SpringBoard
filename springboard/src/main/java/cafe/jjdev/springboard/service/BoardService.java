@@ -18,6 +18,16 @@ public class BoardService {
 	@Autowired
 	private BoardMapper boardMapper;
 	
+	public int Stop() {
+		
+		return boardMapper.Stop();
+	}
+	
+	public int getIndex() {
+		
+		return boardMapper.indexBoard();
+	}
+	
 	public Board getBoard(int boardNo) {
 		
 		return boardMapper.selectBoard(boardNo);

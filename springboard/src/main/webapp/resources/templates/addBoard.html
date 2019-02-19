@@ -1,0 +1,46 @@
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+	<link rel="stylesheet" href="/resources/css/main.css"/>
+	<style>
+		#jb-container {
+	        width: 940px;
+	        margin: 0px auto;
+	        padding: 20px;
+	        border: 1px solid #bcbcbc;
+	      }
+	      #jb-content {
+	        width: 900px;
+	        padding: 80px;
+	        margin-bottom: 80px;
+	        float: center;
+	        border: 1px solid #bcbcbc;
+	      }
+	</style>
+	<meta charset="UTF-8">
+	<title>Insert Form</title>
+	</head>
+	<body>
+		<center>
+			<Form id="jb-content" action="/addBoard" method="post">
+				<fieldset>
+				<div class="form-group">
+					<h2><label>Password</label></h2>
+					<input class="form-control" type="password" name="boardPw" id="Password"> <br><br>
+				</div> <br><br>
+				<div class="form-group">
+					<h2><label>Title</label></h2>
+					<input class="form-control" type="text" name="boardTitle" id="Title">
+				</div> <br><br>
+				<div class="form-group">
+					<h2><label>Content</label></h2>
+					<input class="form-control" type="text" name="boardContent" id="Content"> <br><br>
+				</div> <br><br>
+				<div class="form-group">
+					<h2><label>User</label></h2>
+					<input class="form-control" type="text" name="boardUser" id="User"> <br><br>
+				</div> <br><br>
+				<button type="submit" class="btn btn-primary">Submit</button>
+				</fieldset>
+			</Form>
+	</body>
+</html>

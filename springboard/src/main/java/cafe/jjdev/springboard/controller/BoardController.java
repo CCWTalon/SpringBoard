@@ -20,6 +20,20 @@ public class BoardController {
     @Autowired // 오토와이어링 수행을 하도록 Autowired Annotation을 사용한다.
     private BoardService boardService;
     
+    // 공사 중
+    @GetMapping
+    public String Stop() {
+    	
+    	return "Stop";
+    }
+    
+    // 인덱스 화면
+    @GetMapping("index")
+    public String boardList() {
+    	
+    	return "index";
+    }
+    
     // 목록
     @GetMapping("/boardList")
     public String boardList(Model model, 			// boardList를 조회하기 위해 Model클래스의 model변수를 담고 호출
